@@ -1,10 +1,112 @@
 extends ../layouts/_main.layout.pug
 
 append sharedVars
-  - var pageUrl = 'catalog.html';
+  - var pageUrl = 'index.html';
 
 block title 
     | The main title of index page
 
 block content
-    +svg-icon('cart')
+  header.main-header
+    .container
+      nav.main-nav
+        a(href="").logo
+          h1.logo__title Glaccy Shop
+          img(src="#", alt="logo__img").logo__img
+
+        ul.main-menu
+          - var menu = ['Каталог', 'Доставка и оплата', 'О компании']
+          each item in menu
+            li.main-menu__item
+              a(href="#").main-menu__link=item
+        
+        .user-block
+          form(action="#").find
+            input(type="text" id='find-input' name='find-input').find__input
+            button(type='submit').find__button Найти
+          
+          a(href="#").account Вход
+
+          a(href="#").shop-cart Пусто
+
+          p.work-info
+            span.work-info__time С 10 до 20, ежедневно
+            a(href="tel:+7124502525").work-info__tel 8 812 450-25-25
+      
+      .slider
+        .slider__slide
+          .slider__info
+            .slider__wrap-img
+              img(src="#", alt="").slider__img
+            p.slider__title Крем-брюле и пломбир с малиновым джемом
+            a.btn.slider__btn
+
+        ul.slider__controls.controls
+          -for (var i =0; i<3; i++)
+            li.controls__item
+              a(href="#").controls__link Link
+  main.main-content
+    .container
+      section.section.section_surprise
+        h2.section__title Наши подарки:
+        ul.surprise-list
+          -for(var i=0; i<2; i++)
+            li.surprise-list__item
+              p.surprise-list__title Малинка даром!
+              p.surprise-list__desc При покупке 2кг любого фруктового мороженого, добавим в ваш заказбанку малинового варенья бесплатно
+              a(href="#").surprice-list__btn Хочу варенье   
+
+      section.section.section_products
+        h2.section__title Наше мороженое:
+        ul.products-list
+          -for(var i=0;i<4;i++)
+            li.produsct-list__item
+              span.products-list__hit Хит
+              .products-list__wrap-img
+                img(src="#", alt="Ice-cream").products-list__img 
+              p.products-list__price 310 р/кг
+              p.products-list__desc Сливочное с апельсиновым джемом и цитрусовой стружкой
+
+      section.section.section_about
+        h2.section__title Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+        ul.advantages-list
+          -for(var i=0; i<4; i++)
+            li.advantages-list__item 
+              p.advantages-list__desc Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+
+      section.section.section_marketing
+        h2.section__title Смотрите, что у нас есть:
+
+        .blog
+          p.blog__title Новое в нашем блоге:
+          a.blog__link 10 способов сервировки фруктовых щербетов к столу
+
+        form(action="#").form-email
+          p.form-email__desc Подпишитесь
+          label(for='email').form-email__label
+            input(type="text" placeholder='Электронная почта' id='email' name='email').form-email__input
+          button(type='submit').btn.form-email__btn Отправить
+    section.map
+      h2.map__title Где мы находимся?
+      #map
+      .container
+        .map__info
+          p.map__info-text Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург
+          p.map.info-text Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)
+          a(href="#").btn.map__btn Форма обратной связи
+  footer.main-footer
+
+    ul.socials
+      -for(var i=0; i<3; i++)
+        li.socials__item
+          a.socials__link vk
+
+    ul.footer-menu
+      -for(var i=0; i<4; i++)
+        li.footer-menu__item
+          a(href="#").footer-menu__link Для поставщиков
+    
+    .copyright
+      .copyright__wrap-img
+        img(src="#", alt="htmlacademy").copyright__logo
+      p.copyright__texty Сделано в HTML Academy &copy; 2017 

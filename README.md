@@ -1,5 +1,5 @@
-# Builder
+# Gllacy
 
-It is start point for convert PSD to HTML
+PSD->HTML 
 
 More info about it in process...
