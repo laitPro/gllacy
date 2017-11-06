@@ -1,0 +1,15 @@
+@mixin inlbl($pos: 'top') {
+	display: inline-block;
+
+	@if $pos == 'top' {
+		vertical-align: top;
+	}
+
+	@if $pos == 'middle' {
+		vertical-align: middle;
+	}
+
+	@if $pos == 'bottom' {
+		vertical-align: bottom;
+	}
+}

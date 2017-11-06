@@ -1,0 +1,10 @@
+extends ../layouts/_main.layout.pug
+
+append sharedVars
+  - var pageUrl = 'catalog.html';
+
+block title 
+    | The main title of index page
+
+block content
+    +svg-icon('cart')

@@ -1,0 +1,12 @@
+include ../helpers/mixins/svg-icon
+include ../helpers/mixins/navLink
+
+doctype html
+html
+  block sharedVars
+  include ../modules/_head
+  body
+    include ../blocks/symbols.svg.pug
+    .wrapper
+      block content
+    include ../modules/_scripts
