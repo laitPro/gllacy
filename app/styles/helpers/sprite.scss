@@ -9,22 +9,44 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$checkbox-hover-name: 'checkbox-hover';
-$checkbox-hover-x: 0px;
-$checkbox-hover-y: 0px;
-$checkbox-hover-offset-x: 0px;
-$checkbox-hover-offset-y: 0px;
-$checkbox-hover-width: 19px;
-$checkbox-hover-height: 19px;
-$checkbox-hover-total-width: 19px;
-$checkbox-hover-total-height: 19px;
-$checkbox-hover-image: '../imgs/decorate/sprite/sprite.png';
-$checkbox-hover: (0px, 0px, 0px, 0px, 19px, 19px, 19px, 19px, '../imgs/decorate/sprite/sprite.png', 'checkbox-hover', );
-$spritesheet-width: 19px;
-$spritesheet-height: 19px;
+$in-name: 'in';
+$in-x: 21px;
+$in-y: 0px;
+$in-offset-x: -21px;
+$in-offset-y: 0px;
+$in-width: 21px;
+$in-height: 19px;
+$in-total-width: 42px;
+$in-total-height: 37px;
+$in-image: '../imgs/decorate/sprite/sprite.png';
+$in: (21px, 0px, -21px, 0px, 21px, 19px, 42px, 37px, '../imgs/decorate/sprite/sprite.png', 'in', );
+$shop-cart-name: 'shop-cart';
+$shop-cart-x: 0px;
+$shop-cart-y: 0px;
+$shop-cart-offset-x: 0px;
+$shop-cart-offset-y: 0px;
+$shop-cart-width: 21px;
+$shop-cart-height: 20px;
+$shop-cart-total-width: 42px;
+$shop-cart-total-height: 37px;
+$shop-cart-image: '../imgs/decorate/sprite/sprite.png';
+$shop-cart: (0px, 0px, 0px, 0px, 21px, 20px, 42px, 37px, '../imgs/decorate/sprite/sprite.png', 'shop-cart', );
+$zoom-name: 'zoom';
+$zoom-x: 0px;
+$zoom-y: 20px;
+$zoom-offset-x: 0px;
+$zoom-offset-y: -20px;
+$zoom-width: 17px;
+$zoom-height: 17px;
+$zoom-total-width: 42px;
+$zoom-total-height: 37px;
+$zoom-image: '../imgs/decorate/sprite/sprite.png';
+$zoom: (0px, 20px, 0px, -20px, 17px, 17px, 42px, 37px, '../imgs/decorate/sprite/sprite.png', 'zoom', );
+$spritesheet-width: 42px;
+$spritesheet-height: 37px;
 $spritesheet-image: '../imgs/decorate/sprite/sprite.png';
-$spritesheet-sprites: ($checkbox-hover, );
-$spritesheet: (19px, 19px, '../imgs/decorate/sprite/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($in, $shop-cart, $zoom, );
+$spritesheet: (42px, 37px, '../imgs/decorate/sprite/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

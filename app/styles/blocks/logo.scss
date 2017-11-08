@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  width: 154px;
+  height: 64px;
+}
+
+.logo__title {
+  @extend %hidden;
+}
+
+.logo__img {}

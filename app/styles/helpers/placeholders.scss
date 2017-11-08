@@ -3,3 +3,10 @@
   display: table;
   clear: both;
 }
+
+%hidden {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,51 @@
+.user-block {
+  width: 293px;
+  text-align: right;
+  padding-top: 14px;
+}
+
+.user-block__link {
+  position: relative;
+  @include inlbl();
+  width: 93px;
+  height: 34px;
+
+  margin-left: 10px;
+
+  background: rgba($background-color-base, .2);
+
+  border-radius: 16px;
+
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: $font-medium;
+  color: $color-text-base;
+
+  text-decoration: none;
+  text-align: left;
+  padding-left: 42px;
+  padding-top: 12px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    @include centered(y);
+    left:15px;
+  }
+}
+
+.user-block__link_acc {
+  &:before {
+    @include sprite($in);
+  }
+}
+
+.user-block__link_shop-cart {
+  &:before {
+    @include sprite($shop-cart);
+  }
+}
+
+.user-block__work-info {
+  margin-top: 15px;
+}

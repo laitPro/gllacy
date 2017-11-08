@@ -4,3 +4,19 @@
 	overflow: hidden;
 }
 
+.container {
+  position: relative;
+  width:  1200px;
+  padding-left: 27px;
+  padding-right:  27px;
+  margin: 0 auto;
+
+  @extend %clearfix;
+}
+
+
+.outline {
+  outline: 1px solid red;
+}
+
+

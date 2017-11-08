@@ -1,0 +1,16 @@
+.main-nav {
+  @extend %clearfix;
+}
+
+.main-nav__logo {
+  float: left;
+  margin-right: 22px;
+}
+
+.main-nav__main-menu {
+  float: left;
+}
+
+.main-nav__user-block {
+  float: right;
+}

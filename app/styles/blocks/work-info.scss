@@ -1,0 +1,19 @@
+.work-info {
+  color: $color-text-base;
+  font-weight: $font-bold;
+}
+
+.work-info__time {
+  color: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  
+}
+
+.work-info__tel {
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 5px;
+}
