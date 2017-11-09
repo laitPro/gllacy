@@ -1,0 +1,5 @@
+ul.main-menu.main-nav__main-menu
+    - var menu = ['Каталог', 'Доставка и оплата', 'О компании']
+    each item in menu
+      li.main-menu__item
+        a(href="#").main-menu__link=item
