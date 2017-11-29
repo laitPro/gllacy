@@ -1,9 +1,9 @@
 section.section.section_surprise
   h2.section__title Наши подарки:
   ul.surprise-list
-    -for(var i=0; i<2; i++)
+    each item in surpriselist
       li.surprise-list__item
-        img(src="imgs/content/strawberry.jpg", alt="").surprise-list__img
-        p.surprise-list__title Малинка даром!
-        p.surprise-list__desc При покупке 2кг любого фруктового мороженого, добавим в ваш заказбанку малинового варенья бесплатно
-        a(href="#").btn.surprice-list__btn Хочу варенье   
+        img(src="" + item.img, alt="").surprise-list__img
+        p.surprise-list__title=item.title
+        p.surprise-list__desc=item.desc
+        a(href="#").btn.surprice-list__btn=item.btn  
