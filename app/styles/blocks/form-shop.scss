@@ -1,0 +1,113 @@
+.form-shop {
+  @extend %hidden;
+  
+  width: 540px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border-radius: 5px;
+
+  background: $background-color-white-1;
+  box-shadow: 0 20px 20px rgba($background-color-black,.4);
+}
+
+.form-shop__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+
+  margin-bottom: 15px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #cacac7;
+}
+
+.form-shop__list-item {
+  margin-bottom: 18px;
+}
+
+.form-shop__list-btn {
+  vertical-align: middle;
+
+  margin-right: 10px;
+
+  border: none;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form-shop__btn-img {}
+
+.form-shop__list-img-wrap {
+  @include inlbl(middle);
+
+  width: 33px;
+  height: 33px;
+
+  margin-right: 14px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: black;
+}
+
+.form-shop__list-img {}
+
+.form-shop__list-desc, .form-shop__list-count, .form-shop__list-price, .form-shop__list-price_full {
+  @include inlbl(middle);
+
+  font-size: 13px;
+  line-height: 16px;
+  color: $color-text-black-1;
+
+  margin-right: 32px;
+    
+}
+.form-shop__list-desc {
+  vertical-align: top;
+  padding-top: 8px;
+  width: 216px;
+}
+
+.form-shop__list-count {
+  margin-right: 0;
+}
+
+.form-shop__list-price {
+  margin-right: 30px;
+  margin-left: 3px;
+
+  color: #a6a6a5;
+}
+
+.form-shop__list-price_full {
+  margin-right: 0;
+}
+
+.form-shop__sum {
+  @include reset_mp();
+
+  font-size: 15px;
+  font-weight: $font-bold;
+  line-height: 18px;
+  color: $color-text-black-1;
+
+  margin-bottom: 12px;
+}
+    
+.form-shop__btn {
+  border: none;
+
+  width: 170px;
+  height: 45px;
+}

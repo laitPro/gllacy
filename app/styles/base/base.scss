@@ -38,8 +38,55 @@ img {
   text-shadow: 0 2px 5px rgba(160,32,11,.76);
   border-radius: 32px;
   background: linear-gradient(to top,#e74a35,#f26843);
-  box-shadow: 0 2px 2px rgba(172,16,0,.64);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  box-shadow: 0 2px 2px rgba(#ac1000,.64);
+
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #ec6f5e, #f58669);
+    box-shadow: 0 2px 2px rgba(#ac1000,1);
+  }
+
+  &:active {
+    color: #fceeec;
+    box-shadow: inset 0 2px 2px #942718;
+    background-image: linear-gradient(to bottom, #e74a35, #f26843);
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: $font-medium;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.link_white {
+  @extend .link;
+
+  color: $color-text-base;
+  
+  border-bottom: 1px solid rgba($background-color-base, .3);
+
+  &:hover, &:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(#ffbc9e, .3);
+  }
+}
+
+.link_black {
+
+  @extend .link;
+
+  color: $color-text-black-1;
+  border-bottom: 1px solid rgba($background-color-black, .3);
+
+  &:hover, &:active {
+    color: #e84d37;
+    border-bottom: 1px solid rgba(#ec593c, .3);
+  }
 }
 

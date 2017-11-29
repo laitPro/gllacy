@@ -1,0 +1,21 @@
+.nav-info {
+  text-align: right;
+  margin:0;
+  font-weight: $font-bold;
+}
+
+.nav-info__time {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav-info__tel {
+  color: $color-text-base;
+  font-size: 22px;
+  font-weight: $font-bold;
+  line-height: 24px; 
+}

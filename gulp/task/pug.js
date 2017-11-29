@@ -9,7 +9,7 @@ module.exports = function($) {
     patterns.push({ match: '%=version=%', replace: $.dev ? '' : '?rel=' + $.package.version});
 
     return $.combine(
-      $.gulp.src($.path.template, {since: $.gulp.lastRun('pug')}),
+      $.gulp.src($.path.template/*, {since: $.gulp.lastRun('pug')}*/),
       $.gp.pug({
         locals : JSON.parse($.fs.readFileSync('./content.json', 'utf8')),
         pretty: true

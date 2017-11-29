@@ -1,0 +1,10 @@
+section.section.section_products
+  h2.section__title Наше мороженое:
+  ul.products-list
+    -for(var i=0;i<4;i++)
+      li.produsct-list__item
+        .products-list__wrap-img
+          img(src="imgs/content/hit.png", alt="hit").products-list__img_hit
+          img(src="imgs/content/ice1.png", alt="Ice-cream").products-list__img 
+        p.products-list__price 310 р/кг
+        p.products-list__desc Сливочное с апельсиновым джемом и цитрусовой стружкой

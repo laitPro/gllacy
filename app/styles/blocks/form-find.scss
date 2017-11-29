@@ -1,0 +1,83 @@
+.form-find {
+  position: relative;
+  @include inlbl();
+
+  &:hover {
+    .form-find__input {
+      @extend .form-find__input_visible;
+    }
+  }
+}
+
+.form-find__input {
+  position: relative;
+  @include inlbl();
+
+  border: none;
+  border-radius: 16px;
+
+  width: 130px;
+  height: 33px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background: rgba($background-color-base, .2);
+
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: $font-medium;
+  color: $color-text-base;
+
+  transition: width .2s ease;
+
+  @extend .form-find__input_hidden;
+
+  @include placeholder {
+    color: rgba($color-text-black-1, .4);
+  }
+
+  &:hover + button {
+    @extend %hidden;
+  }
+}
+
+.form-find__input_hidden {
+  width: 33px;
+  font-size: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-find__input_visible {
+  width: 130px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.form-find__button {
+  position: absolute;
+  top:0;
+  right: 0;
+
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  width: 33px;
+  height: 33px;
+  background: rgba($background-color-base, .2);
+
+  &:hover {
+    cursor: pointer;
+    @extend %hidden;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    @include centered();
+    @include sprite($zoom);
+  }
+}

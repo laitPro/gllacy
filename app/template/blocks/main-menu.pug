@@ -1,5 +1,16 @@
 ul.main-menu.main-nav__main-menu
-    - var menu = ['Каталог', 'Доставка и оплата', 'О компании']
-    each item in menu
-      li.main-menu__item
-        a(href="#").main-menu__link=item
+  - var menu = ['Каталог', 'Доставка и оплата', 'О компании']
+  each item,i in menu
+    li.main-menu__item
+      - var link = 'main-menu__link';
+      -if (i == 0) link += ' main-menu__link_active';
+      a(href="#" class='' + link)=item
+      -if (item == 'Каталог') 
+        ul.main-menu__submenu
+          p.main-menu__submenu-title Новинки
+          - var submenu = ['Сливочное', 'Щербеты', 'Фруктовый лед', 'Мелорин']
+          each item,i in submenu
+            li.main-menu__submenu-item
+              - var link = 'main-menu__submenu-link';
+              -if (i == 0) link += ' main-menu__submenu-link_active';
+              a(href="#" class='' + link title="" + item)=item

@@ -1,0 +1,14 @@
+form(action="#").form-shop.user-block__form-shop
+    ul.form-shop__list
+      -for(var i=0; i<2; i++)
+        li.form-shop__list-item
+          button(type='button').form-shop__list-btn
+            img(src="imgs/content/Х.png", alt="nnvvn").form-shop__btn-img
+          .form-shop__list-img-wrap
+            img(src="imgs/content/ice-small1.jpg", alt="").form-shop__list-img
+          span.form-shop__list-desc Пломбир с апельсиновым джемом
+          span.form-shop__list-count 1,5 кг х 
+          span.form-shop__list-price  200 руб.
+          span.form-shop__list-price_full 300 руб.
+    p.form-shop__sum 750 руб.
+    button(type='submit').form-shop__btn.btn Оформить заказ

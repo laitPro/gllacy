@@ -1,5 +1,7 @@
 .user-block {
-  width: 293px;
+  position: relative;
+
+  width: 420px;
   text-align: right;
   padding-top: 14px;
 }
@@ -8,7 +10,7 @@
   position: relative;
   @include inlbl();
   width: 93px;
-  height: 34px;
+  height: 33px;
 
   margin-left: 10px;
 
@@ -16,7 +18,7 @@
 
   border-radius: 16px;
 
-  line-height: 14px;
+  line-height: 11px;
   font-size: 14px;
   font-weight: $font-medium;
   color: $color-text-base;
@@ -26,11 +28,19 @@
   padding-left: 42px;
   padding-top: 12px;
 
+  transition: color, background .2s ease;
+
   &:before {
     content: '';
     position: absolute;
     @include centered(y);
     left:15px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $color-text-black-1;
+    background: $background-color-base;
   }
 }
 
@@ -38,14 +48,45 @@
   &:before {
     @include sprite($in);
   }
-}
 
-.user-block__link_shop-cart {
-  &:before {
-    @include sprite($shop-cart);
+  &:hover {
+    &:before {
+      @include sprite($in-hover);
+    }
   }
 }
 
-.user-block__work-info {
-  margin-top: 15px;
+.user-block__link_shop-cart {
+  width: 117px;
+  
+  &:before {
+    @include sprite($shop-cart);
+  }
+
+  &:hover {
+    @extend .user-block__link_shop-cart_full;
+  }
+}
+
+.user-block__link_shop-cart_full {
+  &:before {
+    @include sprite($shop-cart-hover);
+  }
+}
+
+.user-block__form-login {
+  position: absolute;
+  top: 100%;
+  right: 131px;
+  margin-top: 4px;
+  z-index: 100;
+  text-align: left;
+}
+
+.user-block__form-shop {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  z-index: 100;
 }

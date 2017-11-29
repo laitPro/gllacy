@@ -1,7 +1,8 @@
 .wrapper {
 	min-height: 100%;
 	position: relative;
-	overflow: hidden;
+  overflow: hidden;
+  min-width: 1200px;
 }
 
 .container {
@@ -12,11 +13,16 @@
   margin: 0 auto;
 
   @extend %clearfix;
+
 }
 
 
-.outline {
-  outline: 1px solid red;
+.outline_red {
+  outline: 1px solid rgb(255, 52, 52);
+}
+
+.outline_green {
+  outline: 1px solid rgb(4, 75, 4);
 }
 
 

@@ -1,0 +1,64 @@
+.section_about {
+    border-radius: 13px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+
+    overflow: hidden;
+
+    background: url('../imgs/content/pattern-yellow2.png');
+}
+
+.section_about__title {
+    position: initial;
+    width: auto;
+    height: auto;
+    clip: unset;
+
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: $font-medium;
+    color: $color-text-black-1;
+}
+
+.advantages-list {
+    @include reset_mp();
+    list-style: none;
+    font-size: 0;
+}
+
+.advantages-list__item {
+    @include inlbl();
+    width: 540px;
+    position: relative;
+
+    padding-left: 55px;
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    &:last-child() {
+        margin-right: 0;
+    }
+
+    &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+
+        @include sprite($icon-animal);
+    }
+}
+
+.advantages-list__desc {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-text-black-1;
+}
