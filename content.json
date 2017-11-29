@@ -13,5 +13,37 @@
       "desc": "При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной посылки совершенно бесплатно.",
       "btn" : "Хочу шоколадки!"
     }
+  ],
+  "productslist" : [
+    {
+      "imgmod" : "imgs/content/hit.png",
+      "priceimg" : "imgs/content/rub.png",
+      "img" : "imgs/content/ice1.png",
+      "price" : "310",
+      "desc" : "Сливочное с апельсиновым джемом и цитрусовой стружкой"
+    },
+    {
+      "imgmod" : "imgs/content/hit.png",
+      "priceimg" : "imgs/content/rub.png",
+      "img" : "imgs/content/ice2.png",
+      "price" : "380",
+      "desc" : "Сливочно-кофейное с кусочками шоколада"
+    },
+    {
+      "imgmod" : "imgs/content/hit.png",
+      "priceimg" : "imgs/content/rub.png",
+      "img" : "imgs/content/ice3.png",
+      "price" : "355",
+      "desc" : "Сливочно-клубничное с присыпкой из белого шоколада"
+    },
+    {
+      "imgmod" : "imgs/content/hit.png",
+      "priceimg" : "imgs/content/rub.png",
+      "img" : "imgs/content/ice4.png",
+      "price" : "415",
+      "desc" : "Сливочное крем-брюле с карамельной подливкой"
+    }
+    
+   
   ]
 }

@@ -32,20 +32,37 @@
     top: 0;
 }
 
-.products-list__price {
+.products-list__info {
+    margin-top: -57px;
+}
+
+.products-list__price-val-img {
+    position: relative;
+    @include inlbl(middle);
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.products-list__price, .products-list__val-weight {
+    @include inlbl(middle);
     position: relative;
     margin: 0;
-    margin-top: -65px;
-    margin-bottom: 30px;
 
-    z-index: 10;
-
-    font-size: 42px;
+    font-size: 45px;
+    line-height: 45px;
     font-weight: $font-bold;
+}
+
+.products-list__val-weight {
+    vertical-align: bottom;
+    margin-left: 3px;
+    font-size: 30px;
+    line-height: 35px;
 }
 
 .products-list__desc {
     margin: 0;
+    margin-top: 30px;
 
     font-size: 16px;
     font-weight: $font-medium;

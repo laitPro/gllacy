@@ -1,10 +1,13 @@
 section.section.section_products
   h2.section__title Наше мороженое:
   ul.products-list
-    -for(var i=0;i<4;i++)
+    each item in productslist
       li.produsct-list__item
         .products-list__wrap-img
-          img(src="imgs/content/hit.png", alt="hit").products-list__img_hit
-          img(src="imgs/content/ice1.png", alt="Ice-cream").products-list__img 
-        p.products-list__price 310 р/кг
-        p.products-list__desc Сливочное с апельсиновым джемом и цитрусовой стружкой
+          img(src="" + item.imgmod, alt="hit").products-list__img_hit
+          img(src="" + item.img, alt="Ice-cream").products-list__img 
+        .products-list__info
+          p.products-list__price=item.price
+          img(src="" + item.priceimg, alt="vvvbb").products-list__price-val-img
+          p.products-list__val-weight /кг
+          p.products-list__desc=item.desc
