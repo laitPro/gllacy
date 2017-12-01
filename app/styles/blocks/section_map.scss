@@ -1,45 +1,54 @@
 .section_map {
-    position: relative;
-    height: 432px;
+  position: relative;
+  height: 432px;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .section_map__img {
-    @include centered();
-    width: 100%;
+  @include centered();
+  width: 100%;
 }
 
 .section_map__info {
-    float: right;
+  float: right;
 
-    width: 303px;
-    height: 305px;
+  width: 303px;
+  height: 305px;
 
-    margin-top: 60px;
-    padding-top: 30px;
-    padding-left: 25px;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-left: 25px;
 
-    background: $background-color-base;
+  background: $background-color-base;
 
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .section_map__text {
-    font-size: 14px;
-    line-height: 20px;
-    color: $color-text-black-1;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-black-1;
 }
 
 .section_map__text_bold {
-    display: block;
-    font-size: 18px;
-    font-weight: $font-bold;
-    line-height: 24px;
+  display: block;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}
+
+.section_map__text_link {
+  @include inlbl();
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 24px;
 }
 
 .section_map__btn {
-    width: 252px;
-
-    line-height: 45px;
+  width: 252px;
+  line-height: 45px;
 }
