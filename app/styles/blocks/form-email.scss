@@ -1,41 +1,41 @@
 .form-email {
-    @include inlbl();
-    position: relative;
-    width: 560px;
-    height: 220px;
+  @include inlbl();
+  position: relative;
+  width: 560px;
+  height: 220px;
 
-    padding-top: 35px;
-    padding-left: 28px;
-    padding-right: 25px;
+  padding-top: 35px;
+  padding-left: 28px;
+  padding-right: 25px;
 
-    overflow: hidden;
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: $background-color-base url('../imgs/content/pattern-line.png');
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+
+    background: $background-color-form-email;
 
     border-radius: 15px;
-
-    background: $background-color-base url('../imgs/content/pattern-line.png');
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 5px;
-        bottom: 5px;
-        left: 5px;
-        right: 5px;
-        
-        background: $background-color-form-email;
-
-        border-radius: 15px;
-    }
+  }
 }
 
 .form-email__desc {
-    position: relative;
+  position: relative;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 
-    font-size: 16px;
-    line-height: 22px;
-    color: $color-text-black-2;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-text-black-2;
 }
 
 .form-email__label {
@@ -43,29 +43,29 @@
 }
 
 .form-email__input {
-    @include inlbl();
-    position: relative;
-    width: 367px;
-    height: 43px;
+  @include inlbl();
+  position: relative;
+  width: 367px;
+  height: 43px;
 
-    padding-left: 14px;
-    margin-right: 12px;
+  padding-left: 14px;
+  margin-right: 12px;
 
-    border: 1px solid rgba(#b2b2b2, .52);
-    border-radius: 5px;
+  border: 1px solid rgba(#b2b2b2, .52);
+  border-radius: 5px;
 
-    line-height: 43px;
-    font-size: 16px;
+  line-height: 43px;
+  font-size: 16px;
 
 }
 
 .form-email__btn {
-    position: relative;
-    width: 128px;
-    height: 44px;
-    line-height: 44px;
+  position: relative;
+  width: 128px;
+  height: 42px;
+  line-height: 42px;
 
-    padding: 0;
+  padding: 0;
 
-    border: none;
+  border: none;
 }
