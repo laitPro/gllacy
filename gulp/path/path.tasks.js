@@ -3,7 +3,8 @@
 module.exports = [
   './gulp/task/copy.fonts.js',
   './gulp/task/img.opt.js',
-  './gulp/task/img.sprite.png.js',
+  './gulp/task/img.png.sprite.js',
+  './gulp/task/img.svg.sprite.js',
   './gulp/task/img.svg.symbols.js',
   './gulp/task/clean.js',
   './gulp/task/sass.js',
