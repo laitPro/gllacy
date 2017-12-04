@@ -1,53 +1,52 @@
 .footer-menu {
-    width: 560px;
+  width: 460px;
 
-    @include reset_mp();
-    list-style: none;
-    font-size: 0;
+  @include reset_mp();
+  list-style: none;
+  font-size: 0;
 }
 
 .footer-menu__item {
-    @include inlbl();
-
-    margin-right: 30px;
-
-
+  @include inlbl();
+  margin-right: 30px;
+  margin-bottom: 8px;
 }
 
 .footer-menu__link {
+  display: block;
+  position: relative;
+
+  font-size: 13px;
+  line-height: 13px;
+  color: $color-text-base;
+
+  text-align: center;
+
+  text-decoration: underline;
+  text-decoration-color: rgba($background-color-base, .2);
+
+  &:after {
+    content: attr(title);
     display: block;
-    position: relative;
+    font-weight: bold;
 
-    padding-left: 23px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 
-    text-decoration: none;
-    font-size: 13px;
-    line-height: 18px;
-    color: $color-text-base;
+  }
 
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left:23px;
-        right:0px;
-
-        height: 1px;
-
-        background: rgba($background-color-base, .2);
-    }
-
+  &:hover {
+    font-weight: $font-bold;
+    cursor: pointer;
+    
     &:before {
         content: '';
         @include centered(y);
-        left:0;
+        left:-20px;
 
-        width: 10px;
-        height: 10px;
-
-        background: rgb(253, 174, 174);
-
+        @include sprite($hart);
     }
+  }  
 }
 

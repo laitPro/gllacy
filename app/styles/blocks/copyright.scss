@@ -1,9 +1,36 @@
 .copyright {
-    width: 267px;
+  width: 192px;
+  text-align: right;
 }
 
-.copyright__wrap-img {}
+.copyright__wrap-img {
+  display: block;
+
+  width: 108px;
+  height: 38px;
+
+}
 
 .copyright__logo {}
 
-.copyright__texty {}
+.copyright__text {
+  @include inlbl();
+  margin: 0;
+
+  font-weight: $font-regular;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+}
+
+.copyright__text_link {
+  @include inlbl();
+
+  font-weight: $font-regular;
+  font-size: 12px;
+  line-height: 18px;
+
+  margin-left: 3px;
+
+  
+}

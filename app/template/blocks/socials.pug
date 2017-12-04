@@ -1,4 +1,5 @@
 ul.socials.main-footer__socials
-  -for(var i=0; i<3; i++)
+  -var socials = ['tw', 'inst', 'fb', 'vk']
+  each item in socials
     li.socials__item
-      a.socials__link vk
+      a(href= "#" class="socials__link_" + `${item}`).socials__link=item

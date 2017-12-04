@@ -1,4 +1,23 @@
 ul.footer-menu.main-footer__footer-menu
-  -for(var i=0; i<4; i++)
+  -
+    var menu = [
+      {
+        "text" : "Для поставщиков",
+        "url" : "#"
+      },
+      {
+        "text" : "Наши документы",
+        "url" : "#"
+      },
+      {
+        "text" : "О производстве",
+        "url" : "#"
+      },
+      {
+        "text" : "Экологические стандарты",
+        "url" : "#"
+      }
+    ]
+  each item in menu
     li.footer-menu__item
-      a(href="#").footer-menu__link Для поставщиков
+      a(href=`${item.url}` title=`${item.text}`).footer-menu__link=item.text 
