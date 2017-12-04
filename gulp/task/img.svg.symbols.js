@@ -1,8 +1,8 @@
 'use strict'
 
 module.exports = function($) {
-  $.gulp.task('img.sprite.svg', function () {
-    return $.gulp.src($.path.imgs.decorate_svg)
+  $.gulp.task('img.svg.symbols', function () {
+    return $.gulp.src($.path.imgs.content_svg)
       .pipe($.gp.svgmin({
         js2svg: {
           pretty: true
@@ -19,7 +19,7 @@ module.exports = function($) {
         parserOptions: {xmlsMode: true}
       }))
       .pipe($.gp.replaceStr('&gt;', '>'))
-      .pipe($.gp.rename('symbols.svg.pug'))
+      .pipe($.gp.rename('svg.symbols.pug'))
       .pipe($.gulp.dest('./app/template/blocks/'));
     });
 }
