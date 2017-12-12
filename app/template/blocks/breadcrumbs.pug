@@ -1,0 +1,19 @@
+-
+  var bc = [
+    {
+      'url' : 'index.html',
+      'desc' : 'Главная'
+    },
+    {
+      'url' : 'catalog.html',
+      'desc' :'Каталог'
+    },
+    {
+      'url' : 'catalog.html',
+      'desc' : 'Сливочное'
+    }
+  ]
+ul.breadcrumbs
+ each item in bc
+  li.breadcrumbs__item
+    a(href=`${item.url}`).breadcrumbs__link= item.desc

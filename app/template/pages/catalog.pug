@@ -1,0 +1,27 @@
+extends ../layouts/_main.layout.pug
+
+append sharedVars
+  - var pageUrl = 'catalog.html'
+
+block title
+  | The main title of catalog page
+
+block content
+  header.main-header
+    .container
+      include ../blocks/main-nav
+      include ../blocks/nav-info
+  
+  main.main-content
+    .container
+      include ../blocks/breadcrumbs
+      h2.main-content__title Сливочное
+      include ../blocks/sort
+      include ../blocks/catalog-products
+      include ../blocks/paginations
+  
+  footer.main-footer
+    .container
+      include ../blocks/socials
+      include ../blocks/footer-menu
+      include ../blocks/copyright

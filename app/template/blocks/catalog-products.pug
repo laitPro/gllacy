@@ -1,0 +1,11 @@
+ul.products-list
+  each item in productslist
+    li.produsct-list__item
+      .products-list__wrap-img
+        img(src="" + item.img, alt="Ice-cream").products-list__img 
+      .products-list__info
+        p.products-list__price=item.price
+        img(src="" + item.priceimg, alt="vvvbb").products-list__price-val-img
+        p.products-list__val-weight /кг
+        p.products-list__desc=item.desc
+      a(href="#").products-list__btn Быстрый просмотр
